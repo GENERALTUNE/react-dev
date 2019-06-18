@@ -10,7 +10,8 @@ import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import MyAwesomeReactComponent from './components/MyAwesomeReactComponent';
 import MyComponent from './components/MyComponent';
- 
+import Example from './components/Example';
+
 const App = () => (
   <MuiThemeProvider>
     <MyAwesomeReactComponent />
@@ -27,14 +28,18 @@ function callback() {
 	console.log('execute callback');
 }
 
-ReactDOM.render(
-  <MyComponent />,
-  document.getElementById('root'),
-  callback
-);
+// ReactDOM.render(
+//   <MyComponent />,
+//   document.getElementById('root'),
+//   callback
+// );
 
  
 // ReactDOM.render(
 //   <App />,
 //   document.getElementById('root')
 // );
+
+ReactDOM.render(<Example />,
+  document.getElementById('root')
+);
